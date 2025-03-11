@@ -7,3 +7,4 @@ Temporary changes
 New feature added
 New feature added
 New feature added
+Change from conflict-branch
