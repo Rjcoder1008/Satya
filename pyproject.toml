@@ -1,0 +1,21 @@
+[project]
+name = "satya-platform"
+version = "0.1.0"
+description = "Deepfake Detection & Media Authentication Platform"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "python-multipart",
+    "torch",
+    "torchvision",
+    "transformers",
+    "timm",
+    "opencv-python-headless",
+    "numpy",
+    "pillow",
+    "scikit-learn",
+    "gradio",
+    "sqlalchemy"
+]
