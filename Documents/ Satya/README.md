@@ -30,4 +30,4 @@ A production-ready AI system to detect AI-generated images, videos, and text.
 ## Architecture
 - **Backend**: FastAPI, PyTorch, OpenCV
 - **Frontend**: React, TypeScript, TailwindCSS
-- **Model**: Ensemble of EfficientNet-B4 + DCT Analysis
+- **Model**: Ensemble of EfficientNet-B4 + DCT Analysis.
