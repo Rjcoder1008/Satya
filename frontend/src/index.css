@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light Mode */
+    --background: 0 0% 100%;
+    --foreground: 235 30% 22%;
+    /* Dark Navy Text */
+
+    --card: 0 0% 100%;
+    --card-foreground: 235 30% 22%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 235 30% 22%;
+
+    --primary: 0 79% 59%;
+    /* Palette Red */
+    --primary-foreground: 210 40% 98%;
+
+    --satya-saffron: 0 79% 59%;
+    /* Mapped to Palette Red */
+    /* #e94343 */
+
+    --secondary: 348 47% 39%;
+    /* Palette Muted Red */
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 235 30% 40%;
+
+    --accent: 348 47% 96%;
+    /* Lighter version of secondary */
+    --accent-foreground: 235 30% 22%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 235 30% 90%;
+    --input: 235 30% 90%;
+    --ring: 0 79% 59%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Dark Mode */
+    --background: 235 30% 22%;
+    /* Palette Dark Navy */
+    --foreground: 210 40% 98%;
+
+    --card: 317 24% 26%;
+    /* Palette Dark Purple */
+    --card-foreground: 210 40% 98%;
+
+    --popover: 317 24% 26%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 0 79% 59%;
+    /* Palette Red */
+    --primary-foreground: 210 40% 98%;
+
+    --satya-saffron: 0 79% 59%;
+    /* #e94343 */
+
+    --secondary: 348 47% 39%;
+    /* Palette Muted Red */
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 317 24% 35%;
+    /* Lighter Purple */
+    --muted-foreground: 215 20.2% 80%;
+
+    --accent: 317 24% 35%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 317 24% 35%;
+    --input: 317 24% 35%;
+    --ring: 0 79% 59%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-[hsl(var(--satya-saffron))]/30;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
